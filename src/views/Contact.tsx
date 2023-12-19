@@ -30,17 +30,27 @@ const Contact = () => {
             Got a project in<span className="text-secondary"> mind?</span>
           </h2>
           <img src={contactIllustration} alt="" className="max-h-[348px]" />
+
+          <div className="flex-1 flex flex-col gap-6 w-full max-w-[696px]">
+
+
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <LabelInput labelText="Your name" placeholderText="Name" />
             <LabelInput labelText="Your email" placeholderText="Email" />
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-6">
-            <LabelInput labelText="Your message" placeholderText="Message" textarea/>
+            <LabelInput labelText="Your message" placeholderText="Message" textarea
+            />
+
+          </div>
+
+          <Button secondary>Send Message</Button>
 
           </div>
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-[1px bg-divider]"/>
     </div>
   );
 };
