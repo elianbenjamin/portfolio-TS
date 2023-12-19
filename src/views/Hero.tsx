@@ -29,13 +29,18 @@ const Hero = () => {
   }} >
     <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
       <div className="w-full xl:w-fit">
-        <h1 
+        <motion.h1
+        variants={fadeIn("down")}
+        transition={transition()}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: false}}
         className="w-full xl:w-fit text-center xl:text-start text-4xl sm:text-6xl lg:text-8xl font-bold text-textPrimary uppercase">
           Elián Rivera
           <br />
           <span className="text-secondary">
             <Typewriter 
-            words={["Full", "Stack", "Developer"]} 
+            words={["Full Stack Developer"]} 
             cursor
             cursorStyle="_"
             typeSpeed={250}
@@ -43,15 +48,27 @@ const Hero = () => {
             loop
             />
           </span>
-        </h1>
-        <div className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
+        </motion.h1>
+        <motion.div 
+        variants={fadeIn("up")}
+        transition={transition()}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: false}}
+        className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
           <Button secondary>Hire me</Button>
           <Button icon={downloadIcon}>Download CV</Button>
 
-        </div>
+        </motion.div>
 
       </div>
-      <img src={homePageIllustation} 
+      <motion.img 
+      variants={scale()}
+      transition={transition()}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: false}}
+      src={homePageIllustation} 
       alt="" 
       className="max-w-full sm:max-w-[401px]" />
 
