@@ -13,7 +13,9 @@ import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return <div id="contact" className="min-h-screen flex items-center justify-center">
+
+  </div>;
 };
 
 export default Contact;
