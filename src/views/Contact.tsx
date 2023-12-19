@@ -32,7 +32,8 @@ const Contact = () => {
           </h2>
 <img src={contactIllustration} alt="" className="max-h-[348px]" />
 <div className="flex flex-col sm:flex-row items-center gap-6">
-
+<LabelInput   labelText="Your name" placeholderText="Name"/>
+<LabelInput labelText="Your email" placeholderText="Email"/>
 </div>
 
         </div>
