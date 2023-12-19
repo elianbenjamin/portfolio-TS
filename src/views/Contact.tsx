@@ -30,6 +30,11 @@ const Contact = () => {
           className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] font-bold text-textPrimary">
             Got a project in<span className="text-secondary"> mind?</span>
           </h2>
+<img src={contactIllustration} alt="" className="max-h-[348px]" />
+<div className="flex flex-col sm:flex-row items-center gap-6">
+
+</div>
+
         </div>
       </div>
     </div>
