@@ -31,11 +31,11 @@ const Hero = () => {
       <div className="w-full xl:w-fit">
         <h1 
         className="w-full xl:w-fit text-center xl:text-start text-4xl sm:text-6xl lg:text-8xl font-bold text-textPrimary uppercase">
-          Creative
+          Elián Rivera
           <br />
           <span className="text-secondary">
             <Typewriter 
-            words={["Developer"]} 
+            words={["Full", "Stack", "Developer"]} 
             cursor
             cursorStyle="_"
             typeSpeed={250}
