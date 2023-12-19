@@ -3,14 +3,15 @@ import aboutPageImg from "../assets/about-me-page.svg";
 import aboutIllustration from "../assets/about-illustration.svg";
 import facebookIcon from "../assets/facebook-icon.svg";
 import instagramIcon from "../assets/instagram-icon.svg";
-import twitterIcon from "../assets/twitter-icon.svg";
+/* import twitterIcon from "../assets/twitter-icon.svg";
 import youtubeIcon from "../assets/youtube-icon.svg";
-
+ */
 // components
 import { Reveal } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
+import { NavLink } from 'react-router-dom';
 
 // utils
 import { fadeIn, scale } from "../utils/variants";
@@ -18,7 +19,7 @@ import { transition } from "../utils/transition";
 import SocialMediaIcon from '../components/SocialMediaIcon';
 
 const About = () => {
-  return <div className="min-h-screen felx items-center justify-center relative"
+  return <div id="about" className="min-h-screen felx items-center justify-center relative"
   style={{
     background: `url(${aboutPageImg})`,
     backgroundPosition: "center",
@@ -49,8 +50,17 @@ const About = () => {
   whileInView="visible"
   viewport={{once: false}}
   className="flex items-center justify-center xl:justify-start gap-6">
+    
+    <NavLink to={"https://www.linkedin.com/in/elian-rivera/"} target="_blank">
+
  <SocialMediaIcon imgSrc={facebookIcon} title="Facebook"/>
+    </NavLink>
+    
+  <NavLink to={"https://www.instagram.com/elian_rivera18/"} target="_blank">
+
  <SocialMediaIcon imgSrc={instagramIcon} title="Instagram"/>
+
+  </NavLink>
   </motion.div>
 </div>
   <div className="flex-1 flex items-center justify-center">

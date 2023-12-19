@@ -17,16 +17,16 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { transition } from "../utils/transition";
 
-type Category = "uiUx" | "web";
+type Category = "only" | "team";
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>("uiUx");
+  const [activeCategory, setActiveCategory] = useState<Category>("only");
 
   const filteredProjects = () => {
-    if (activeCategory === "uiUx") {
-      return projects.filter((item) => item.category === "uiUx");
+    if (activeCategory === "only") {
+      return projects.filter((item) => item.category === "only");
     } else {
-      return projects.filter((item) => item.category === "web");
+      return projects.filter((item) => item.category === "team");
     }
   };
   return (
@@ -58,16 +58,16 @@ const Projects = () => {
           viewport={{once: false}}
           className="flex items-center gap-4 justify-center xl:justify-start flex-col sm:flex-row">
             <Button
-              secondary={activeCategory === "uiUx" ? true : false}
-              onClick={() => setActiveCategory("uiUx")}
+              secondary={activeCategory === "only" ? true : false}
+              onClick={() => setActiveCategory("only")}
             >
-              UI/UX
+              Only
             </Button>
             <Button
-              secondary={activeCategory === "web" ? true : false}
-              onClick={() => setActiveCategory("web")}
+              secondary={activeCategory === "team" ? true : false}
+              onClick={() => setActiveCategory("team")}
             >
-              web
+              Team
             </Button>
           </motion.div>
 

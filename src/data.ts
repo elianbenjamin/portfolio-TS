@@ -1,9 +1,8 @@
-import uiUxOne from "./assets/ui-ux-project-one.svg";
-import uiUxTwo from "./assets/ui-ux-project-two.svg";
-import uiUxThree from "./assets/ui-ux-project-three.svg";
-import webOne from "./assets/web-project-one.jpeg";
-import webTwo from "./assets/web-project-two.jpeg";
-import webThree from "./assets/web-project-three.jpeg";
+import rickandmorty from "./assets/rickandmorty.png"
+import videogames from "./assets/videogames.png"
+import proceso from "./assets/enproceso.png"
+import solidario from "./assets/solidario.png"
+
 
 interface project {
   id: number;
@@ -15,38 +14,38 @@ interface project {
 export const projects: project[] = [
    {
      id: 0,
-     category: "uiUx",
-     img: uiUxOne,
-     title: "UI/UX Web Template",
+     category: "only",
+     img: rickandmorty,
+     title: "Rick and Morty",
    },
    {
      id: 1,
-     category: "uiUx",
-     img: uiUxTwo,
-    title: "UI/UX Tablet Template",
+     category: "only",
+     img: videogames,
+    title: "Videogames",
    },
    {
      id: 2,
-     category: "uiUx",
-     img: uiUxThree,
-     title: "Solar System App Design",
+     category: "only",
+     img: proceso,
+     title: "En proceso...",
    },
    {
      id: 3,
-     category: "web",
-     img: webOne,
-     title: "Interior Design Website",
+     category: "team",
+     img: solidario,
+     title: "Fundación Potenciar Solidario ",
    },
    {
      id: 4,
-     category: "web",
-     img: webTwo,
-     title: "Agency Landing Page",
+     category: "team",
+     img: proceso,
+     title: "En proceso...",
    },
    {
      id: 5,
-     category: "web",
-     img: webThree,
-     title: "Crypto Landing Page",
+     category: "team",
+     img: proceso,
+     title: "En proceso...",
    },
 ];
