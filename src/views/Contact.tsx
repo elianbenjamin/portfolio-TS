@@ -20,6 +20,11 @@ const Contact = () => {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   }}>
+    <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full pt-20 pb-20 sm:pb-16 px-12">
+    <div className="flex-1 flex flex-col gap-14">
+
+    </div>
+    </div>
 
   </div>;
 };
