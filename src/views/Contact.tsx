@@ -13,7 +13,13 @@ import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 
 const Contact = () => {
-  return <div id="contact" className="min-h-screen flex items-center justify-center">
+  return <div id="contact" className="min-h-screen flex items-center justify-center relative"
+  style={{
+    background: `url(${contactPageImg})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  }}>
 
   </div>;
 };
