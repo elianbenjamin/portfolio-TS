@@ -7,11 +7,11 @@ import { Menu } from "./components";
 function App() {
   return (
     <>
-      {/* <Hero />
-      <About />
-      <Projects />
+      <Hero />
+       <About />
+     {/*  <Projects />
       <Contact />
-      <Menu /> */}
+      <Menu />  */}
     </>
   );
 }
