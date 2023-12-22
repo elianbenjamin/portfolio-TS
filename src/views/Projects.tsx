@@ -61,13 +61,13 @@ const Projects = () => {
               secondary={activeCategory === "only" ? true : false}
               onClick={() => setActiveCategory("only")}
             >
-              Only
+              Personal
             </Button>
             <Button
               secondary={activeCategory === "team" ? true : false}
               onClick={() => setActiveCategory("team")}
             >
-              Team
+              Group
             </Button>
           </motion.div>
 
