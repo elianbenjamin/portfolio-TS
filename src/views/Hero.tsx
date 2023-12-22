@@ -20,7 +20,7 @@ const Hero = () => {
   return (
   
   <div 
-  id="home" className="min-h-screen items-start justify-center relative" 
+  id="home" className="min-h-screen flex flex-col items-center justify-center relative" 
   style={{
     background: `url(${homePageImg})`,
     backgroundPosition: "center",
@@ -35,8 +35,8 @@ const Hero = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{once: false}}
-        className="w-full xl:w-fit text-center xl:text-start text-4xl sm:text-6xl lg:text-8xl font-bold text-textPrimary uppercase">
-          Elián Rivera
+        className="w-full xl:w-fit text-center xl:text-start text-xl sm:text-4xl lg:text-6xl font-bold text-textPrimary">
+          I'm Elián Rivera
           <br />
           <span className="text-secondary">
             <Typewriter 
