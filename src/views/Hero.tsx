@@ -17,6 +17,7 @@ import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
 
 const Hero = () => {
+  const pdfUrl = "/CV-EliánRivera.pdf"
   return (
   
   <div 
@@ -57,7 +58,11 @@ const Hero = () => {
         viewport={{once: false}}
         className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
           <Button secondary>Hire me</Button>
-          <Button icon={downloadIcon}>Download CV</Button>
+          <Button icon={downloadIcon}>
+          <a href={pdfUrl} download="ElianRivera_CV.pdf">
+        Download CV
+      </a>
+            </Button>
 
         </motion.div>
 
