@@ -75,7 +75,7 @@ const Hero = () => {
         </motion.div>
 
       </div>
-      <motion.img 
+     { <motion.img 
       variants={scale()}
       transition={transition()}
       initial="hidden"
@@ -83,7 +83,7 @@ const Hero = () => {
       viewport={{once: false}}
       src={homePageIllustation} 
       alt="" 
-      className="max-w-full sm:max-w-[401px]" />
+      className="max-w-full sm:max-w-[401px]" />}
 
     </div>
     

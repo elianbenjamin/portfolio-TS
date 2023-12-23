@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="min-h-screen felx items-center justify-center relative"
+      className="min-h-screen flex flex-col items-center justify-center relative"
       style={{
         background: `url(${aboutPageImg})`,
         backgroundPosition: "center",
