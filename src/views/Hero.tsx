@@ -15,8 +15,16 @@ import { motion } from "framer-motion";
 // utils
 import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
+import { useState } from "react";
 
 const Hero = () => {
+  const [whatsappNumber] = useState(3537562542)
+
+  const handleHireMeClick = () => {
+    window.open(`https://wa.me/${whatsappNumber}`, "_blank")
+  }
+
+
   const pdfUrl = "/CV-EliánRivera.pdf"
   return (
   
@@ -57,7 +65,7 @@ const Hero = () => {
         whileInView="visible"
         viewport={{once: false}}
         className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
-          <Button secondary>Hire me</Button>
+          <Button secondary onClick={handleHireMeClick}>Hire me</Button>
           <Button icon={downloadIcon}>
           <a href={pdfUrl} download="ElianRivera_CV.pdf">
         Download CV
