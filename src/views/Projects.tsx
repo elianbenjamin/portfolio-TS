@@ -69,6 +69,7 @@ const Projects = () => {
             >
               Group
             </Button>
+
           </motion.div>
 
           <motion.div
@@ -79,8 +80,8 @@ const Projects = () => {
           viewport={{once: false}}
           className="flex gap-12 mt-12 flex-wrap justify-center">
             {
-              filteredProjects().map((item)=> (
-                <Card imgSrc={item.img} title={item.title} />
+              filteredProjects().map((item, index)=> (
+                <Card key={index} imgSrc={item.img} title={item.title} />
               ))
             }
 
