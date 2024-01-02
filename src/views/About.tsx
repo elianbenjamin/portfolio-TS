@@ -47,6 +47,7 @@ const About = () => {
               experience in the successful execution of web projects. In my free
               time, I love exploring new technologies and enjoy creative
               programming.
+              sdfsdfsdfsdf
             </p>
           </Reveal>
 
