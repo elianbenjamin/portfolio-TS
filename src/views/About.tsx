@@ -48,6 +48,10 @@ const About = () => {
               time, I love exploring new technologies and enjoy creative
               programming.
               sdfsdfsdfsdf
+              sdfsdfsdfsdf
+              sdfsdfsdfsdf
+              sdfsdfsdfsdf
+              sdfsdfsdfsdf
             </p>
           </Reveal>
 
