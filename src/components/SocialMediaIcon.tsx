@@ -1,5 +1,5 @@
 // mui
-import { Tooltip } from "@mui/material";
+/* import { Tooltip } from "@mui/material";
 
 // react
 import { FC } from "react";
@@ -20,4 +20,4 @@ const SocialMediaIcon: FC<SocialMediaIconProps> = ({ imgSrc, title }) => {
   );
 };
 
-export default SocialMediaIcon;
+export default SocialMediaIcon; */
